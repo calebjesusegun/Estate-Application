@@ -1,8 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace EstateApp.Data.Entities {
+namespace EstateApp.Data.Entities
+{
 
-   public class ApplicationUser : IdentityUser {
-
+   public class ApplicationUser : IdentityUser
+   {
    }
 }
