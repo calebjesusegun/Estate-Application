@@ -31,7 +31,7 @@ namespace EstateApp.Web
                 sqlServerOptions.MigrationsAssembly("EstateApp.Data");
              }));
 
-         services.AddDbContextPool<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ApplicationCDb"), sqlServerOptions =>
+         services.AddDbContextPool<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ApplicationConnection"), sqlServerOptions =>
          {
             sqlServerOptions.MigrationsAssembly("EstateApp.Data");
          })
