@@ -9,12 +9,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EstateApp.Web.Controllers
 {
-   public class AccountsController : Controller
+   public class AccountController : Controller
    {
 
       private readonly IAccountsService _accountsService;
       private readonly SignInManager<ApplicationUser> _signInManager;
-      public AccountsController(IAccountsService accountsService, SignInManager<ApplicationUser> signInManager)
+      public AccountController(IAccountsService accountsService, SignInManager<ApplicationUser> signInManager)
       {
          _accountsService = accountsService;
          _signInManager = signInManager;
